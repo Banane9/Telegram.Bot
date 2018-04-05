@@ -1,29 +1,32 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace Telegram.Bot.Types.Enums
 {
     /// <summary>
-    /// The part of the face relative to which the mask should be placed. One of "forehead", "eyes", "mouth", or "chin".
+    /// Enumerates the possible parts of the face relative to which the mask can be placed.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter), true)]
     public enum MaskPositionPoint
     {
         /// <summary>
-        /// The forehead
+        /// Relative to the forehead.
         /// </summary>
         Forehead,
+
         /// <summary>
-        /// The eyes
+        /// Relative to the eyes.
         /// </summary>
         Eyes,
+
         /// <summary>
-        /// The mouth
+        /// Relative to the mouth.
         /// </summary>
         Mouth,
+
         /// <summary>
-        /// The chin
+        /// Relative to the chin.
         /// </summary>
-        Chin
+        Chin,
     }
 }

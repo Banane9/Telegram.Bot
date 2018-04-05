@@ -1,32 +1,32 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace Telegram.Bot.Types.Enums
 {
     /// <summary>
-    /// Type of a <see cref="Chat"/>
+    /// Enumerates the possible types of <see cref="Chat"/>s.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter), true)]
     public enum ChatType
     {
         /// <summary>
-        /// Normal one to one <see cref="Chat"/>
+        /// A normal one to one <see cref="Chat"/>.
         /// </summary>
         Private,
 
         /// <summary>
-        /// Normal groupchat
+        /// A normal group chat.
         /// </summary>
         Group,
 
         /// <summary>
-        /// A channel
+        /// A channel.
         /// </summary>
         Channel,
 
         /// <summary>
-        /// A supergroup
+        /// A supergroup.
         /// </summary>
-        Supergroup
+        Supergroup,
     }
 }

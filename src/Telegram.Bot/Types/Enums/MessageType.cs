@@ -4,144 +4,144 @@ using Newtonsoft.Json.Converters;
 namespace Telegram.Bot.Types.Enums
 {
     /// <summary>
-    /// The type of a <see cref="Message"/>
+    /// Enumerates the possible types of a <see cref="Message"/>.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter), true)]
     public enum MessageType
     {
         /// <summary>
-        /// The <see cref="Message"/> is unknown
+        /// The type of the <see cref="Message"/> is unknown.
         /// </summary>
         Unknown = 0,
 
         /// <summary>
-        /// The <see cref="Message"/> contains text
+        /// The <see cref="Message"/> contains text.
         /// </summary>
         Text,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="PhotoSize"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.PhotoSize"/>.
         /// </summary>
         Photo,
 
         /// <summary>
-        /// The <see cref="Message"/> contains an <see cref="Types.Audio"/>
+        /// The <see cref="Message"/> contains <see cref="Types.Audio"/>.
         /// </summary>
         Audio,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Video"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Video"/>.
         /// </summary>
         Video,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Voice"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Voice"/> recording.
         /// </summary>
         Voice,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Document"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Document"/>.
         /// </summary>
         Document,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Sticker"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Sticker"/>.
         /// </summary>
         Sticker,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Location"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Location"/>.
         /// </summary>
         Location,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Contact"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Contact"/>.
         /// </summary>
         Contact,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Venue"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Venue"/>.
         /// </summary>
         Venue,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.Game"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.Game"/>.
         /// </summary>
         Game,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Types.VideoNote"/>
+        /// The <see cref="Message"/> contains a <see cref="Types.VideoNote"/>.
         /// </summary>
         VideoNote,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Invoice"/>
+        /// The <see cref="Message"/> contains an <see cref="Invoice"/>.
         /// </summary>
         Invoice,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="SuccessfulPayment"/>
+        /// The <see cref="Message"/> contains a <see cref="SuccessfulPayment"/>.
         /// </summary>
         SuccessfulPayment,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.ConnectedWebsite"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.ConnectedWebsite"/>.
         /// </summary>
         WebsiteConnected,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.NewChatMembers"/>
+        /// The <see cref="Message"/> contains <see cref="Message.NewChatMembers"/>.
         /// </summary>
         ChatMembersAdded,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.LeftChatMember"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.LeftChatMember"/>.
         /// </summary>
         ChatMemberLeft,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.NewChatTitle"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.NewChatTitle"/>.
         /// </summary>
         ChatTitleChanged,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.NewChatPhoto"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.NewChatPhoto"/>.
         /// </summary>
         ChatPhotoChanged,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.PinnedMessage"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.PinnedMessage"/>.
         /// </summary>
         MessagePinned,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.DeleteChatPhoto"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.DeleteChatPhoto"/>.
         /// </summary>
         ChatPhotoDeleted,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.GroupChatCreated"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.GroupChatCreated"/>.
         /// </summary>
         GroupCreated,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.SupergroupChatCreated"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.SupergroupChatCreated"/>.
         /// </summary>
         SupergroupCreated,
 
         /// <summary>
-        /// The <see cref="Message"/> contains a <see cref="Message.ChannelChatCreated"/>
+        /// The <see cref="Message"/> contains a <see cref="Message.ChannelChatCreated"/>.
         /// </summary>
         ChannelCreated,
 
         /// <summary>
-        /// The <see cref="Message"/> contains non-default <see cref="Message.MigrateFromChatId"/>
+        /// The <see cref="Message"/> contains non-default <see cref="Message.MigrateFromChatId"/>.
         /// </summary>
         MigratedToSupergroup,
 
         /// <summary>
-        /// The <see cref="Message"/> contains non-default <see cref="Message.MigrateToChatId"/>
+        /// The <see cref="Message"/> contains non-default <see cref="Message.MigrateToChatId"/>.
         /// </summary>
-        MigratedFromGroup
+        MigratedFromGroup,
     }
 }
