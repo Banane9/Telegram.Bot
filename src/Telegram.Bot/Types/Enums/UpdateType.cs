@@ -11,7 +11,7 @@ namespace Telegram.Bot.Types.Enums
     public enum UpdateType
     {
         /// <summary>
-        /// The Type is unknown.
+        /// The Type of the <see cref="Update"/> is unknown.
         /// </summary>
         Unknown = 0,
 
